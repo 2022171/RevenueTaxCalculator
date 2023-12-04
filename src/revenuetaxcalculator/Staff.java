@@ -23,10 +23,11 @@ public abstract class Staff {
     String ppsN;
     String iban;
     String payFrequency;
+    boolean admin;
     private static int currentID = 1;
     
     public Staff(int StaffID, int phoneNumber, String firstName, String lastName, String birthDate, String email, String Address, String startDate, String endDate, 
-            String position, String status, String ppsN, String iban, String payFrequency) {
+            String position, String status, String ppsN, String iban, String payFrequency, boolean admin) {
         this.StaffID = currentID;
         this.phoneNumber = phoneNumber;
         this.firstName = firstName;
@@ -40,6 +41,7 @@ public abstract class Staff {
         this.status = status;
         this.ppsN = ppsN;
         this.iban = iban;
+        this.admin = admin;
         this.payFrequency = payFrequency;
         currentID++;
     }
