@@ -21,6 +21,13 @@ public class RevenueTaxCalculator {
     
    
     public static void main(String[] args) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+        
+        TaxDabaseReader dbr = new TaxDabaseReader ();
+        System.out.println(Staff.getCurrentID());
+        dbr.staffData();
+        dbr.getStaffData(2);
+        dbr.getStaffData(3);
+        System.out.println(Staff.getCurrentID());
 
         
        // if (SetupData.setupDB()) {
@@ -30,7 +37,7 @@ public class RevenueTaxCalculator {
         
       //  if (SetupData.setupDB()) {
        // Manager m1 = new Manager();
-        System.out.println("Database and table created");
+        //System.out.println("Database and table created");
     }// else{
         //  System.out.println("Oh no! There is a problem");
       // }
