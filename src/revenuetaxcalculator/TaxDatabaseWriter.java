@@ -22,8 +22,9 @@ public class TaxDatabaseWriter extends DataBaseTax {
                 Statement stmt = conn.createStatement();
             ){
              String sql = String.format("INSERT INTO " + TABLE_NAME + " VALUES ("
-                     + "'%s', '%s', '%s', %d);",
-                    staff.getStaffID(), staff.getPhoneNumber(), staff.getFirstName(), staff.getLastName(), staff.getBirthDate(), staff.getEmail(), staff.getAddress(), staff.getStartDate(), staff.getEndDate(), staff.getPosition(), staff.getStatus(), staff.getPpsN(), staff.getIban(), staff.getPayFrequency());
+                     + "'%d', '%d', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s );",
+                    staff.getStaffID(), staff.getPhoneNumber(), staff.getFirstName(), staff.getLastName(), staff.getBirthDate(), staff.getEmail(), staff.getAddress(), 
+                    staff.getStartDate(), staff.getEndDate(), staff.getPosition(), staff.getStatus(), staff.getPpsN(), staff.getIban(), staff.getPayFrequency());
                      stmt.execute(sql);
                      return true;
                            
