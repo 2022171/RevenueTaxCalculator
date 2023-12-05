@@ -26,7 +26,7 @@ public abstract class Staff {
     boolean admin;
     private static int currentID = 1;
     
-    public Staff(int phoneNumber, String firstName, String lastName, String birthDate, String email, String Address, String startDate, String endDate, 
+    public Staff(String firstName, String lastName, String birthDate, String email, String Address, String startDate, String endDate, 
             String position, String status, String ppsN, String iban, String payFrequency, boolean admin) {
         this.StaffID = currentID;
         this.phoneNumber = phoneNumber;

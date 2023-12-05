@@ -25,7 +25,7 @@ public class TaxDabaseReader extends DataBaseTax {
         ) {
             while (results.next()) {
                 
-                int phoneNumber = results.getInt("phoneNumber");
+               // int phoneNumber = results.getInt("phoneNumber");
               String firstName= results.getString("firstName");
               String lastName = results.getString("lastName");
               String birthDate = results.getString("birthDate");
@@ -41,7 +41,7 @@ public class TaxDabaseReader extends DataBaseTax {
               //boolean admin = results.getBoolean("admin");
                 
                 
-                Manager mg1 = new Manager(phoneNumber, firstName, lastName, birthDate,  email, Address, startDate, endDate,
+                Manager mg1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate, endDate,
                  position, status,  ppsN,  iban, payFrequency);
                 allStaff.add(mg1);
             }
@@ -66,7 +66,7 @@ public class TaxDabaseReader extends DataBaseTax {
            
            results.next();
           
-                int phoneNumber = results.getInt("phoneNumber");
+              //  int phoneNumber = results.getInt("phoneNumber");
               String firstName= results.getString("firstName");
               String lastName = results.getString("lastName");
               String birthDate = results.getString("birthDate");
@@ -81,7 +81,7 @@ public class TaxDabaseReader extends DataBaseTax {
               String payFrequency = results.getString("payFrequency");
            
            int id = results.getInt("id");
-           Manager m1 = new Manager(phoneNumber, firstName, lastName, birthDate,  email, Address, startDate, endDate,
+           Manager m1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate, endDate,
                  position, status,  ppsN,  iban, payFrequency);     
            return m1;    
 
