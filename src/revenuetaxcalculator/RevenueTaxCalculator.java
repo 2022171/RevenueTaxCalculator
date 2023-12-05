@@ -21,14 +21,19 @@ public class RevenueTaxCalculator {
     
    
     public static void main(String[] args) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-      
+
         
-        if (SetupData.setupDB()) {
+       // if (SetupData.setupDB()) {
+
+       //Manager m1 = new Manager();
+
         
+      //  if (SetupData.setupDB()) {
+       // Manager m1 = new Manager();
         System.out.println("Database and table created");
-    } else{
-           System.out.println("Oh no! There is a problem");
-       }
-    }
+    }// else{
+        //  System.out.println("Oh no! There is a problem");
+      // }
+  //  }//
     
 }
