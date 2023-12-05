@@ -25,8 +25,8 @@ public class RevenueTaxCalculator {
         TaxDabaseReader dbr = new TaxDabaseReader ();
         System.out.println(Staff.getCurrentID());
         dbr.staffData();
+        dbr.getStaffData(1);
         dbr.getStaffData(2);
-        dbr.getStaffData(3);
         System.out.println(Staff.getCurrentID());
 
         

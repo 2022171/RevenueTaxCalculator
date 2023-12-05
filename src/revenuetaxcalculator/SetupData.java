@@ -43,7 +43,7 @@ public class SetupData {
                     + "status ENUM ('active', 'inactive'),"
                     + "ppsN VARCHAR(255),"
                     + "iban VARCHAR(255),"
-                    + "payFrequency ENUM ('weekly', 'monthly'),"
+                    + "payFrequency ENUM ('weekly', 'monthly')"
                     + ");";
             
             stmt.execute(sql);
