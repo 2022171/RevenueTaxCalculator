@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class TaxDatabaseWriter extends DataBaseTax {
     
-    public boolean addPatient (Staff staff) throws SQLException{
+    public boolean addStaff (Staff staff) throws SQLException{
          try(
                 Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
                 Statement stmt = conn.createStatement();

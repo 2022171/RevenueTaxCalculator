@@ -25,22 +25,20 @@ public class RevenueTaxCalculator {
         TaxDabaseReader dbr = new TaxDabaseReader ();
         System.out.println(Staff.getCurrentID());
         dbr.staffData();
-        dbr.getStaffData(2);
-        dbr.getStaffData(3);
+//        dbr.getStaffData(1);
+//        dbr.getStaffData(2);
         System.out.println(Staff.getCurrentID());
 
+     Manager m1 = new Manager("Caroline", "Ferreira", "1994-04-29", "carool.alvesf@gmail.com", "Leo Avenue", "2023-06-12", "2023-12-05", "Manager", "Active", "2022362pw", "klsdfbdslkfbdsl", "monthly");
+        System.out.println(m1);
         
-       // if (SetupData.setupDB()) {
-
-       //Manager m1 = new Manager();
-
-        
-      //  if (SetupData.setupDB()) {
-       // Manager m1 = new Manager();
-        //System.out.println("Database and table created");
-    }// else{
-        //  System.out.println("Oh no! There is a problem");
-      // }
-  //  }//
+        TaxDatabaseWriter dbw = new TaxDatabaseWriter();
+        if(dbw.addStaff(m1)){
+            System.out.println("m1 added");
+        } else {
+            System.out.println("Database setup failed.");
+        }
     
+    
+}
 }

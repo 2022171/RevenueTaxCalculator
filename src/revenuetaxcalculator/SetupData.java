@@ -13,11 +13,11 @@ import java.sql.Statement;
  *
  * @author caroo
  */
-public class SetupData {
+public class SetupData extends DataBaseTax {
     
-    final static String DB_BASE_URL = "jdbc:mysql://localhost"; // to communicate with MySQL DataBase
-    final static String USER = "ooc2023";
-    final static String PASSWORD = "ooc2023";
+//    final static String DB_BASE_URL = "jdbc:mysql://localhost"; // to communicate with MySQL DataBase
+//    final static String USER = "ooc2023";
+//    final static String PASSWORD = "ooc2023";
     
      public static boolean setupDB() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException{
         Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
@@ -26,10 +26,10 @@ public class SetupData {
                 Connection conn = DriverManager.getConnection(DB_BASE_URL, USER, PASSWORD);
                 Statement stmt = conn.createStatement();
             ){
-            stmt.execute("CREATE DATABASE IF NOT EXISTS taxcalculator;");
+            stmt.execute("CREATE DATABASE IF NOT EXISTS " + DB_NAME + ";");
             stmt.execute("USE taxcalculator;");
             String sql =
-                    "CREATE TABLE IF NOT EXISTS staffData ("
+                    "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( "
                     + "StaffID INT(10),"
                     + "phoneNumber INT(10),"
                     + "firstName VARCHAR(255),"
@@ -43,7 +43,7 @@ public class SetupData {
                     + "status ENUM ('active', 'inactive'),"
                     + "ppsN VARCHAR(255),"
                     + "iban VARCHAR(255),"
-                    + "payFrequency ENUM ('weekly', 'monthly'),"
+                    + "payFrequency ENUM ('weekly', 'monthly')"
                     + ");";
             
             stmt.execute(sql);
