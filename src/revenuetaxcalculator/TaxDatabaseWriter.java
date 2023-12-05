@@ -10,4 +10,5 @@ package revenuetaxcalculator;
  */
 public class TaxDatabaseWriter {
     
+    
 }
