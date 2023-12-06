@@ -17,17 +17,21 @@ public abstract class Staff {
     String email;
     String Address;
     String startDate;
-    String endDate;
+    
     String position;
-    String status;
+   
     String ppsN;
     String iban;
     String payFrequency;
+    double grossIncome;
+    double taxCredit;
+    double taxOwed;
+    
     boolean admin;
     private static int currentID = 1;
     
-    public Staff(String firstName, String lastName, String birthDate, String email, String Address, String startDate, String endDate, 
-            String position, String status, String ppsN, String iban, String payFrequency, boolean admin) {
+    public Staff(String firstName, String lastName, String birthDate, String email, String Address, String startDate,
+            String position, String ppsN, String iban, String payFrequency, boolean admin, double grossIncome, double taxCredit, double taxOwed) {
         this.StaffID = currentID;
         this.phoneNumber = phoneNumber;
         this.firstName = firstName;
@@ -36,18 +40,23 @@ public abstract class Staff {
         this.email = email;
         this.Address = Address;
         this.startDate = startDate;
-        this.endDate = endDate;
+        //this.endDate = endDate;
         this.position = position;
-        this.status = status;
+        //this.status = status;
         this.ppsN = ppsN;
         this.iban = iban;
         this.admin = admin;
         this.payFrequency = payFrequency;
+        this.grossIncome= grossIncome;
+        this.taxCredit = taxCredit;
+        this.taxOwed = taxOwed;
         currentID++;
     }
+
    
-     public Staff(int StaffID, int phoneNumber, String firstName, String lastName, String birthDate, String email, String Address, String startDate, String endDate, 
-            String position, String status, String ppsN, String iban, String payFrequency, boolean admin) {
+   
+     public Staff(int StaffID, int phoneNumber, String firstName, String lastName, String birthDate, String email, String Address, String startDate,
+            String position, String ppsN, String iban, String payFrequency, boolean admin, double grossIncome, double taxCredit, double taxOwed) {
         this.StaffID = currentID;
         this.phoneNumber = phoneNumber;
         this.firstName = firstName;
@@ -56,13 +65,16 @@ public abstract class Staff {
         this.email = email;
         this.Address = Address;
         this.startDate = startDate;
-        this.endDate = endDate;
+        //this.endDate = endDate;
         this.position = position;
-        this.status = status;
+        //this.status = status;
         this.ppsN = ppsN;
         this.iban = iban;
         this.admin = admin;
         this.payFrequency = payFrequency;
+        this.grossIncome= grossIncome;
+        this.taxCredit = taxCredit;
+        this.taxOwed = taxOwed;
         if(currentID <= StaffID){
             currentID= StaffID + 1;
      }
@@ -99,17 +111,13 @@ public abstract class Staff {
         return startDate;
     }
 
-    public String getEndDate() {
-        return endDate;
-    }
+    
 
     public String getPosition() {
         return position;
     }
 
-    public String getStatus() {
-        return status;
-    }
+    
 
     public String getPpsN() {
         return ppsN;
@@ -138,7 +146,34 @@ public abstract class Staff {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    
+     public double getGrossIncome() {
+        return grossIncome;
+    }
+
+    public double getTaxCredit() {
+        return taxCredit;
+    }
+
+    public double getTaxOwed() {
+        return taxOwed;
+    }
+    public double calculatePAYE(){
+    double PAYE=0;
+        return PAYE;    
+    };
+    public double calculateUSC(){
+        double USC = 0;
+        return USC;
+        
+        
+    };
+  public double calculatePRSI(){
+        double PRSI= 0;
+
+       return PRSI;
+        
+       
+    };
 
     
 }

@@ -32,17 +32,21 @@ public class TaxDabaseReader extends DataBaseTax {
               String email = results.getString("email");
               String Address = results.getString("Address");
               String startDate = results.getString("startDate");
-              String endDate = results.getString("endDate");
+             // String endDate = results.getString("endDate");
               String position = results.getString("position");
-              String status = results.getString("status");
+             // String status = results.getString("status");
               String ppsN = results.getString("ppsN");
               String iban = results.getString("iban");
               String payFrequency = results.getString("payFrequency");
+              boolean admin = results.getBoolean("admin");
+              double grossIncome = results.getInt("grossIncome");
+              double taxCredit = results.getInt("taxCredit");
+              double taxOwed = results.getInt("taxOwed");
               //boolean admin = results.getBoolean("admin");
                 
                 
-                Manager mg1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate, endDate,
-                 position, status,  ppsN,  iban, payFrequency);
+                Manager mg1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate,
+                 position, ppsN,  iban, payFrequency,admin, grossIncome, taxCredit, taxOwed);
                 allStaff.add(mg1);
             }
         } catch (Exception e) {
@@ -73,16 +77,20 @@ public class TaxDabaseReader extends DataBaseTax {
               String email = results.getString("email");
               String Address = results.getString("Address");
               String startDate = results.getString("startDate");
-              String endDate = results.getString("endDate");
+            //  String endDate = results.getString("endDate");
               String position = results.getString("position");
-              String status = results.getString("status");
+             // String status = results.getString("status");
               String ppsN = results.getString("ppsN");
               String iban = results.getString("iban");
               String payFrequency = results.getString("payFrequency");
+              boolean admin = results.getBoolean("admin");
+              double grossIncome = results.getInt("grossIncome");
+              double taxCredit = results.getInt("taxCredit");
+              double taxOwed = results.getInt("taxOwed");
            
            int id = results.getInt("id");
-           Manager m1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate, endDate,
-                 position, status,  ppsN,  iban, payFrequency);     
+           Manager m1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate,
+                 position, ppsN,  iban, payFrequency,admin, grossIncome, taxCredit, taxOwed);     
            return m1;    
 
       } catch (Exception e){
