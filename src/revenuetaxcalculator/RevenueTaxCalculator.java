@@ -25,7 +25,7 @@ public class RevenueTaxCalculator {
             //throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException
     {
         
-<<<<<<< HEAD
+
 //        TaxDabaseReader dbr = new TaxDabaseReader ();
 //        System.out.println(Staff.getCurrentID());
 //        dbr.staffData();
@@ -43,19 +43,19 @@ public class RevenueTaxCalculator {
 //            System.out.println("Database setup failed.");
 //        }
     
-=======
-        TaxDabaseReader dbr = new TaxDabaseReader ();
-        System.out.println(Staff.getCurrentID());
-        dbr.staffData();
-
-        dbr.getStaffData(1);
-        dbr.getStaffData(2);
-
+//
+//        TaxDabaseReader dbr = new TaxDabaseReader ();
+//        System.out.println(Staff.getCurrentID());
+//        dbr.staffData();
+//
 //        dbr.getStaffData(1);
 //        dbr.getStaffData(2);
+//
+////        dbr.getStaffData(1);
+////        dbr.getStaffData(2);
+//
+//        System.out.println(Staff.getCurrentID());
 
-        System.out.println(Staff.getCurrentID());
->>>>>>> 370ac5fbafaf7519aeeb420ac68232cc5d271e0a
 
     
 
