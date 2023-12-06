@@ -26,9 +26,15 @@ public class RevenueTaxCalculator {
    public static void main(String[] args) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
     Scanner myKb = new Scanner(System.in);
 
+<<<<<<< HEAD
 //    public static void main(String[] args) 
 //            //throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException
 //    {
+=======
+  //  public static void main(String[] args) 
+            //throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException
+    {
+>>>>>>> 22c7ddbe04dfcc9a0ca6bfebdb15a6be169d9147
         
 
 //        TaxDabaseReader dbr = new TaxDabaseReader ();
@@ -49,6 +55,7 @@ public class RevenueTaxCalculator {
 //        }
     
 
+<<<<<<< HEAD
 //
 //        TaxDabaseReader dbr = new TaxDabaseReader ();
 //        System.out.println(Staff.getCurrentID());
@@ -63,6 +70,8 @@ public class RevenueTaxCalculator {
 //        System.out.println(Staff.getCurrentID());
 
 //
+=======
+>>>>>>> 22c7ddbe04dfcc9a0ca6bfebdb15a6be169d9147
 //        TaxDabaseReader dbr = new TaxDabaseReader ();
 //        System.out.println(Staff.getCurrentID());
 //        dbr.staffData();
@@ -128,8 +137,17 @@ double grossIncome = myKb.nextDouble();
 
 
     
+   }}
 
 
+//IOUtils form = new IOUtils();
+//
+//String login;
+//        
+//        login = form.getUserText("Please enter your login or click in new user to be registreded");
+
+
+<<<<<<< HEAD
 //
 //IOUtils form = new IOUtils();
 //
@@ -141,3 +159,7 @@ double grossIncome = myKb.nextDouble();
 //
 //}
 }}
+=======
+
+}
+>>>>>>> 22c7ddbe04dfcc9a0ca6bfebdb15a6be169d9147
