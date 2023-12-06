@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class TaxDatabaseWriter extends DataBaseTax {
     
-    public boolean addStaff (Staff staff) throws SQLException{
+    public boolean addUsers (users staff) throws SQLException{
          try(
                 Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
                 Statement stmt = conn.createStatement();
@@ -30,7 +30,7 @@ public class TaxDatabaseWriter extends DataBaseTax {
                            
          }
     }
-    public boolean addallStaff(List<Staff> allStaff){
+    public boolean addallUsers(List<users> allStaff){
         return true;
     }
 }

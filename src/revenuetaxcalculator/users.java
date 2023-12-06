@@ -8,9 +8,8 @@ package revenuetaxcalculator;
  *
  * @author danie
  */
-public abstract class Staff {
-    int StaffID;
-    int phoneNumber;
+public abstract class users {
+    
     String firstName;
     String lastName;
     String birthDate;
@@ -30,10 +29,9 @@ public abstract class Staff {
     boolean admin;
     private static int currentID = 1;
     
-    public Staff(String firstName, String lastName, String birthDate, String email, String Address, String startDate,
+    public users(String firstName, String lastName, String birthDate, String email, String Address, String startDate,
             String position, String ppsN, String iban, String payFrequency, boolean admin, double grossIncome, double taxCredit, double taxOwed) {
-        this.StaffID = currentID;
-        this.phoneNumber = phoneNumber;
+        
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
@@ -55,10 +53,9 @@ public abstract class Staff {
 
    
    
-     public Staff(int StaffID, int phoneNumber, String firstName, String lastName, String birthDate, String email, String Address, String startDate,
+     public users(String firstName, String lastName, String birthDate, String email, String Address, String startDate,
             String position, String ppsN, String iban, String payFrequency, boolean admin, double grossIncome, double taxCredit, double taxOwed) {
-        this.StaffID = currentID;
-        this.phoneNumber = phoneNumber;
+      
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
@@ -79,13 +76,7 @@ public abstract class Staff {
             currentID= StaffID + 1;
      }
      }
-    public int getStaffID() {
-        return StaffID;
-    }
 
-    public int getPhoneNumber() {
-        return phoneNumber;
-    }
 
     public String getFirstName() {
         return firstName;

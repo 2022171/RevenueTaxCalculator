@@ -15,8 +15,8 @@ import java.util.ArrayList;
  * @author danie
  */
 public class TaxDabaseReader extends DataBaseTax {
-     public ArrayList<Staff> staffData() {
-        ArrayList<Staff> allStaff = new ArrayList<>();
+     public ArrayList<users> staffData() {
+        ArrayList<users> allUsers = new ArrayList<>();
         
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
@@ -44,18 +44,18 @@ public class TaxDabaseReader extends DataBaseTax {
               double taxOwed = results.getInt("taxOwed");
               //boolean admin = results.getBoolean("admin");
                 
-                
-                Manager mg1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate,
-                 position, ppsN,  iban, payFrequency,admin, grossIncome, taxCredit, taxOwed);
-                allStaff.add(mg1);
+//                
+//                Manager mg1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate,
+//                 position, ppsN,  iban, payFrequency,admin, grossIncome, taxCredit, taxOwed);
+//                allUsers.add(mg1);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         
-        return allStaff;
+        return allUsers;
     }
-    public Staff getStaffData(int StaffID){
+    public users getStaffData(int StaffID){
           // we are going to get only the row of a particular id  
           try(
          Connection conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
@@ -89,15 +89,15 @@ public class TaxDabaseReader extends DataBaseTax {
               double taxOwed = results.getInt("taxOwed");
            
            int id = results.getInt("id");
-           Manager m1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate,
-                 position, ppsN,  iban, payFrequency,admin, grossIncome, taxCredit, taxOwed);     
-           return m1;    
+//           Manager m1 = new Manager(firstName, lastName, birthDate,  email, Address, startDate,
+//                 position, ppsN,  iban, payFrequency,admin, grossIncome, taxCredit, taxOwed);     
+//           return m1;    
 
       } catch (Exception e){
           e.printStackTrace();
           return null;
       }
-      }
-}
+      
+
       
 
