@@ -38,12 +38,13 @@ public class SetupData extends DataBaseTax {
                     + "email VARCHAR(255),"
                     + "Address VARCHAR(255),"
                     + "startDate DATE,"
-                    + "endDate DATE,"
                     + "position ENUM ('Manager', 'Supervisor', 'Assistant', 'TeamLeader'),"
-                    + "status ENUM ('active', 'inactive'),"
                     + "ppsN VARCHAR(255),"
                     + "iban VARCHAR(255),"
                     + "payFrequency ENUM ('weekly', 'monthly')"
+                    + "grossIncome INT(10)"
+                    + "taxCredit INT(10)"
+                    + "taxOwed INT(10)"
                     + ");";
             
             stmt.execute(sql);

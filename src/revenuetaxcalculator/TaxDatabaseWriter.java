@@ -24,7 +24,7 @@ public class TaxDatabaseWriter extends DataBaseTax {
              String sql = String.format("INSERT INTO " + TABLE_NAME + " VALUES ("
                      + "'%d', '%d', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s );",
                     staff.getStaffID(), staff.getPhoneNumber(), staff.getFirstName(), staff.getLastName(), staff.getBirthDate(), staff.getEmail(), staff.getAddress(), 
-                    staff.getStartDate(), staff.getEndDate(), staff.getPosition(), staff.getStatus(), staff.getPpsN(), staff.getIban(), staff.getPayFrequency());
+                    staff.getStartDate(), staff.getPosition(),staff.getPpsN(), staff.getIban(), staff.getPayFrequency(),staff.grossIncome, staff.taxCredit, staff.taxOwed);
                      stmt.execute(sql);
                      return true;
                            

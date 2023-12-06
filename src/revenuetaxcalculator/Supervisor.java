@@ -10,8 +10,13 @@ package revenuetaxcalculator;
  */
 public class Supervisor extends Staff {
     
-    public Supervisor(String firstName, String lastName, String birthDate, String email, String Address, String startDate, String endDate, String position, String status, String ppsN, String iban, String payFrequency, boolean admin) {
-        super(firstName, lastName, birthDate, email, Address, startDate, endDate, position, status, ppsN, iban, payFrequency, false);
+    public Supervisor(String firstName, String lastName, String birthDate, String email, String Address, String startDate, String position, String ppsN, String iban, String payFrequency, boolean admin, double grossIncome, double taxCredit, double taxOwed) {
+        super(firstName, lastName, birthDate, email, Address, startDate, position,ppsN, iban, payFrequency, admin, grossIncome, taxCredit, taxOwed);
     }
     
+   public void modifyOwnProfile(String newFirstName, String newLastName) {
+        setFirstName(newFirstName);
+        setLastName(newLastName);
+   }
+   
 }
