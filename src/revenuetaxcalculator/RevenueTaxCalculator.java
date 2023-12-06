@@ -4,6 +4,7 @@
  */
 package revenuetaxcalculator;
 
+import ioutils.IOUtils;
 import java.sql.SQLException;
 
 /**
@@ -20,25 +21,38 @@ public class RevenueTaxCalculator {
      */
     
    
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public static void main(String[] args) 
+            //throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException
+    {
         
-        TaxDabaseReader dbr = new TaxDabaseReader ();
-        System.out.println(Staff.getCurrentID());
-        dbr.staffData();
-//        dbr.getStaffData(1);
-//        dbr.getStaffData(2);
-        System.out.println(Staff.getCurrentID());
+//        TaxDabaseReader dbr = new TaxDabaseReader ();
+//        System.out.println(Staff.getCurrentID());
+//        dbr.staffData();
+////        dbr.getStaffData(1);
+////        dbr.getStaffData(2);
+//        System.out.println(Staff.getCurrentID());
+//
+//     Manager m1 = new Manager("Caroline", "Ferreira", "1994-04-29", "carool.alvesf@gmail.com", "Leo Avenue", "2023-06-12", "2023-12-05", "Manager", "Active", "2022362pw", "klsdfbdslkfbdsl", "monthly");
+//        System.out.println(m1);
+//        
+//        TaxDatabaseWriter dbw = new TaxDatabaseWriter();
+//        if(dbw.addStaff(m1)){
+//            System.out.println("m1 added");
+//        } else {
+//            System.out.println("Database setup failed.");
+//        }
+    
 
-     Manager m1 = new Manager("Caroline", "Ferreira", "1994-04-29", "carool.alvesf@gmail.com", "Leo Avenue", "2023-06-12", "2023-12-05", "Manager", "Active", "2022362pw", "klsdfbdslkfbdsl", "monthly");
-        System.out.println(m1);
+    
+
+
+
+IOUtils form = new IOUtils();
+
+String login;
         
-        TaxDatabaseWriter dbw = new TaxDatabaseWriter();
-        if(dbw.addStaff(m1)){
-            System.out.println("m1 added");
-        } else {
-            System.out.println("Database setup failed.");
-        }
-    
-    
+        login = form.getUserText("Please enter your login or click in new user to be registreded");
+
+
 }
 }
