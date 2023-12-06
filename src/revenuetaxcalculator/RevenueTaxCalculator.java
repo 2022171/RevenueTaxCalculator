@@ -4,6 +4,7 @@
  */
 package revenuetaxcalculator;
 
+import ioutils.IOUtils;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -21,8 +22,37 @@ public class RevenueTaxCalculator {
      */
     
    
+<<<<<<< HEAD
    public static void main(String[] args) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
     Scanner myKb = new Scanner(System.in);
+=======
+    public static void main(String[] args) 
+            //throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException
+    {
+        
+<<<<<<< HEAD
+//        TaxDabaseReader dbr = new TaxDabaseReader ();
+//        System.out.println(Staff.getCurrentID());
+//        dbr.staffData();
+////        dbr.getStaffData(1);
+////        dbr.getStaffData(2);
+//        System.out.println(Staff.getCurrentID());
+//
+//     Manager m1 = new Manager("Caroline", "Ferreira", "1994-04-29", "carool.alvesf@gmail.com", "Leo Avenue", "2023-06-12", "2023-12-05", "Manager", "Active", "2022362pw", "klsdfbdslkfbdsl", "monthly");
+//        System.out.println(m1);
+//        
+//        TaxDatabaseWriter dbw = new TaxDatabaseWriter();
+//        if(dbw.addStaff(m1)){
+//            System.out.println("m1 added");
+//        } else {
+//            System.out.println("Database setup failed.");
+//        }
+    
+=======
+        TaxDabaseReader dbr = new TaxDabaseReader ();
+        System.out.println(Staff.getCurrentID());
+        dbr.staffData();
+>>>>>>> 268bbcad2b021b4060f91f584c22522793dd720b
 
     // Get user input for details required for tax calculation
     //System.out.print("Enter gross income: ");
@@ -31,6 +61,7 @@ public class RevenueTaxCalculator {
     System.out.print("Enter gross income: ");
 double grossIncome = myKb.nextDouble();
 
+<<<<<<< HEAD
    //double grossIncome= 0.0
     double taxOwed = 0.0;
 
@@ -78,5 +109,21 @@ double grossIncome = myKb.nextDouble();
     System.out.println("Calculated PAYE: " + paye);
     System.out.println("Total Tax Owed: " + totalTaxOwed);
        System.out.println("Net Salary is " + netSalary);
+=======
+        System.out.println(Staff.getCurrentID());
+>>>>>>> 370ac5fbafaf7519aeeb420ac68232cc5d271e0a
+
+    
+
+
+
+IOUtils form = new IOUtils();
+
+String login;
+        
+        login = form.getUserText("Please enter your login or click in new user to be registreded");
+
+
+>>>>>>> 268bbcad2b021b4060f91f584c22522793dd720b
 }
 }

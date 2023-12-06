@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/danie/OneDrive/Documentos/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/TaxDabaseReader.java</file>
             <file>file:/C:/Users/danie/OneDrive/Documentos/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/TeamLeader.java</file>
             <file>file:/C:/Users/danie/OneDrive/Documentos/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/SetupData.java</file>
@@ -15,6 +16,9 @@
             <file>file:/C:/Users/danie/OneDrive/Documentos/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/DataBaseTax.java</file>
             <file>file:/C:/Users/danie/OneDrive/Documentos/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/Assistant.java</file>
             <file>file:/C:/Users/danie/OneDrive/Documentos/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/RevenueTaxCalculator.java</file>
+=======
+            <file>file:/C:/Users/caroo/Documents/NetBeansProjects/RevenueTaxCalculator/src/revenuetaxcalculator/RevenueTaxCalculator.java</file>
+>>>>>>> 268bbcad2b021b4060f91f584c22522793dd720b
         </group>
     </open-files>
 </project-private>
